@@ -1,0 +1,24 @@
+.DS_Store
+.env
+*.pyc
+*.pyo
+env/
+venv/
+env*
+.tox/
+.cache/
+.pytest_cache/
+.idea/
+.idea/*
+.idea
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+*,cover
+dist
+dist/*
+NetGsm.egg-info
+NetGsm.egg-info/*
+rebuild.sh

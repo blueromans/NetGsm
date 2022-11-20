@@ -13,10 +13,10 @@ class SmsService:
     is_sms_send = False
 
     def __init__(self, user_code=None, user_password=None, api_url=None):
-        self.user_code = os.environ.get('NETGSM_USER_CODE', user_code),
+        self.user_code = os.environ.get('NETGSM_USER_CODE', user_code)
         if self.user_code is None:
             raise ValueError(ErrorCodes.USER_CODE_ERROR)
-        self.user_password = os.environ.get('NETGSM_USER_PASSWORD', user_password),
+        self.user_password = os.environ.get('NETGSM_USER_PASSWORD', user_password)
         if self.user_password is None:
             raise ValueError(ErrorCodes.USER_PASSWORD_ERROR)
         if api_url is not None:

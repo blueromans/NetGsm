@@ -1,3 +1,5 @@
+[![PyPI version](https://img.shields.io/pypi/v/NetGsm.svg)](https://pypi.python.org/pypi/NetGsm)
+
 # NetGsm Python PyPackage
 
 NetGsm is the most popular sms provider at Turkey. NetGsm client is a Python library to access services quickly.

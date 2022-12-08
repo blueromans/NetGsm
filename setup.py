@@ -12,9 +12,9 @@ setuptools.setup(
     description='NetGsm Sms Client Python package',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/blueromans/netgsm.git',
+    url='https://github.com/blueromans/NetGsm.git',
     project_urls={
-        "Bug Tracker": "https://github.com/blueromans/netgsm/issues",
+        "Bug Tracker": "https://github.com/blueromans/NetGsm/issues",
     },
     install_requires=['requests'],
     classifiers=[

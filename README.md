@@ -33,7 +33,7 @@ kwargs = {
     'api_url': 'net gsm api url'  # Default value : 'https://api.netgsm.com.tr/sms/send/get'
 }
 sms_service = SmsService(**kwargs)
-sms_service.send(phone='Phone Number (5551234567)', message='Your Message', header='Your header')
+sms_service.send_sms(phone='Phone Number (5551234567)', message='Your Message', header='Your header')
 # header default value : None if you don't pass this value your header is your user code
 ```
 

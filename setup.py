@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name='NetGsm',
-    version="0.0.4",
+    version="0.0.5",
     author="Yaşar Özyurt",
     author_email="blueromans@gmail.com",
     description='NetGsm Sms Client Python package',

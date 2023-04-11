@@ -63,3 +63,16 @@ class SmsService:
         if self.is_sms_send:
             return
         raise NetGsmException(ErrorCode.sms_error_codes[response_code])
+
+    def get_sms_by_bulk_id(self, bulk_id, url='/sms/report', type=0):
+        try:
+            self.params.update({'bulkid': bulk_id,
+                                'type': type})
+            response = requests.get(
+                f'{self.API_URL}{url}',
+                params=self.params,
+            )
+            response = response.text.split(" ")
+            return response[0], response[1]
+        except Exception as e:
+            raise NetGsmException(e.__str__())

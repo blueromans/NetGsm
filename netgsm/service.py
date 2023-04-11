@@ -35,7 +35,8 @@ class SmsService:
                 params=self.params,
             )
             self.check_sms_status(response)
-            return True
+            response = response.text.split(" ")
+            return response[0], response[1]
         except Exception as e:
             raise NetGsmException(e.__str__())
 
@@ -50,7 +51,8 @@ class SmsService:
                 data=xmlData, headers=headers
             )
             self.check_sms_status(response)
-            return True
+            response = response.text.split(" ")
+            return response[0], response[1]
         except Exception as e:
             raise NetGsmException(e.__str__())
 
